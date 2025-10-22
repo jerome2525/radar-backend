@@ -1,5 +1,2 @@
-[providers]
-nodejs = "20"
-
 [start]
 cmd = "cd server && npm start"
