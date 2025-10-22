@@ -17,7 +17,7 @@ app.use(express.json());
 // app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Swagger documentation
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, {
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(specs, {
   explorer: true,
   customCss: '.swagger-ui .topbar { display: none }',
   customSiteTitle: 'Weather Radar API Documentation'
@@ -347,7 +347,7 @@ initializeDatabase().then(() => {
         latest: '/api/radar/latest',
         status: '/api/radar/status',
         bounds: '/api/radar/bounds',
-        docs: '/api-docs'
+        docs: '/api/docs'
       }
     });
   });
@@ -355,7 +355,7 @@ initializeDatabase().then(() => {
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
     console.log(`API available at http://localhost:${PORT}/api/radar/latest`);
-    console.log(`Swagger documentation at http://localhost:${PORT}/api-docs`);
+    console.log(`Swagger documentation at http://localhost:${PORT}/api/docs`);
   });
 }).catch(error => {
   console.error('Failed to start server:', error);
