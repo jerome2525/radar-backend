@@ -4,12 +4,9 @@ FROM node:20-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy root package.json
-COPY package.json ./
-
 # Copy server package.json and install dependencies
-COPY server/package*.json ./server/
-RUN cd server && npm ci --omit=dev
+COPY server/package*.json ./
+RUN npm install --omit=dev
 
 # Copy server source code
 COPY server/ ./
