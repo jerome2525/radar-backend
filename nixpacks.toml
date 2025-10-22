@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs', 'npm']
 
 [phases.install]
-cmds = ['cd server && npm install --production']
+cmds = ['cd server && npm ci --only=production']
 
 [phases.build]
 cmds = []
@@ -11,4 +11,4 @@ cmds = []
 cmd = 'cd server && npm start'
 
 [providers]
-nodejs = '18'
+nodejs = '20'

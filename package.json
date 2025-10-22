@@ -1,0 +1,30 @@
+{
+  "name": "radar-backend",
+  "version": "1.0.0",
+  "description": "Weather Radar Backend - MRMS data processing service",
+  "private": true,
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "install-deps": "cd server && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerome2525/radar-backend.git"
+  },
+  "keywords": [
+    "weather",
+    "radar",
+    "mrms",
+    "noaa",
+    "api",
+    "nodejs",
+    "express"
+  ],
+  "author": "Jerome",
+  "license": "MIT"
+}
