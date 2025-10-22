@@ -231,3 +231,6 @@ For support and questions:
 ---
 
 **Built with ❤️ for weather enthusiasts and developers**
+
+---
+*Last updated: $(date)*
