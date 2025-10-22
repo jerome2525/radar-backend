@@ -1,0 +1,27 @@
+{
+  "name": "radar-server",
+  "version": "1.0.0",
+  "description": "Backend server for MRMS radar data processing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "grib2json": "^1.0.2",
+    "node-cron": "^3.0.3",
+    "path": "^0.12.7",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
