@@ -9,7 +9,7 @@ COPY package.json ./
 
 # Copy server package.json and install dependencies
 COPY server/package*.json ./server/
-RUN cd server && npm ci --only=production
+RUN cd server && npm ci --omit=dev
 
 # Copy server source code
 COPY server/ ./
